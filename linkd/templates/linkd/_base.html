@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RAMCHI</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'linkd/style.css' %}" />
+    <link rel="stylesheet" href="{% static 'linkd/mediaqueries.css' %}" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">ROYAL RAMCHI ACADEMY</div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">ROYAL RAMCHI ACADEMY</div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        
+        <img src="{% static 'linkd/profile-pic.jpeg' %}" alt="profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">RAMCHI</h1>
+        <p class="section__text__p2">Certified LifeSkills and Wealth Coach</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-1" target="_blank"
+            onclick="window.open('https://youtube.com/@ramchiacademy333?si=rcrnqp6P0oDke6SR', '_blank')"
+          >
+          ROYAL RAMCHI ACADEMY youtube channel
+          </button>
+          <button
+            class="btn btn-color-1" target="_blank"
+            onclick="window.open('https://youtube.com/@getrichwithramchi?si=SBQO7GpUFpi3MNx7', '_blank')"
+          >
+          team3netra youtube channel
+          </button>
+          <button
+            class="btn btn-color-1" target="_blank"
+            onclick="window.open('https://chat.whatsapp.com/LSZDGiGwA2bLLx0WO0LkhF', '_blank')"
+          >
+            Official Whatsapp Group
+          </button>
+          <button
+            class="btn btn-color-1" target="_blank"
+            onclick="window.open('{{zoom}}', '_blank')">
+          Zoom Meeting Link
+          </button>
+
+
+          <button class="btn btn-color-1" onclick="window.open('https://t.me/+cEcHYcJFe6wyN2Nl', '_blank')">
+            telegram
+          </button>
+          <button class="btn btn-color-1" onclick="window.open('tel:+918247429317', '_blank')">
+            Phone Number
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="{% static 'linkd/script.js' %}"></script>
+</body>
+</html>
